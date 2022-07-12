@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Dominik Kolarský
+- 👋 Hi, I’m Dominik Kolarský.
 - 👀 I’m interested in Full-stack development.
 - 🌱 I’m currently learning React.js, Node.js and PHP.
 - 💞️ I’m looking to collaborate on developing applications which will change world to better place.
