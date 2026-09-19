@@ -1,16 +1,17 @@
 Product engineer with frontend roots, building across web, iOS, and backend.
 Focused on thoughtful interfaces and reliable software.
 
-## What I'm working on
+## What I'm focused on right now
 
-- **[tickadoo](https://www.tickadoo.com)**: Working across the ticketing platform, including web, native iOS, backend integrations, the full booking flow, and an internal seatmap editor for venues.
-- **[PreviewLoop](https://previewloop.com)**: Building a visual feedback tool for websites, with on-page annotations, screenshots, a browser extension, and a team dashboard.
-- **Draculino**: Building a website and CMS, including the publishing workflow and deployment infrastructure.
-- **School meal ordering platform**: Building a website and app for parent orders, payments, and kitchen fulfilment.
+- **[tickadoo](https://www.tickadoo.com)**: Web and iOS ticketing, AI-powered discovery and personalization, booking flows, and a seatmap editor for venues.
+- **[PreviewLoop](https://previewloop.com)**: Website feedback with screenshots, annotations, and AI in the loop. Built to save myself time going back and forth on changes with clients.
+- **Draculino**: A website and CMS for the Brazilian jiu-jitsu club I train at, with 16 branches across the Czech Republic.
+- **School meal platform**: The boring but useful stuff. Orders, payments, and making sure the kitchen knows what to prepare.
 
-## Technologies I work with
+## Stuff I work with
 
-TypeScript, React, SolidJS, Astro, Swift, SwiftUI, Cloudflare Workers, PostgreSQL, and Payload CMS.
+TypeScript · React · SolidJS · Astro · Swift · SwiftUI  
+Cloudflare Workers · Hono · PostgreSQL / Neon · D1 · Drizzle · Payload CMS
 
 ## Get in touch
 
