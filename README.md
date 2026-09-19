@@ -1,9 +1,5 @@
-# Hi, I'm Dominik Kolarský
-
-I'm a product engineer building web applications, native iOS apps, and the backend systems behind them.
-
-My background is in frontend development.
-I care about how a product looks and feels, and I work across the stack to make it work well in production.
+Product engineer with frontend roots, building across web, iOS, and backend.
+Focused on thoughtful interfaces and reliable software.
 
 ## What I'm working on
 
