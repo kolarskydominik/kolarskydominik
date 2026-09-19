@@ -7,8 +7,8 @@ I care about how a product looks and feels, and I work across the stack to make 
 
 ## What I'm working on
 
-- **tickadoo**: Working across the ticketing platform, including web, native iOS, backend integrations, the full booking flow, and an internal seatmap editor for venues.
-- **PreviewLoop**: Building a visual feedback tool for websites, with on-page annotations, screenshots, a browser extension, and a team dashboard.
+- **[tickadoo](https://www.tickadoo.com)**: Working across the ticketing platform, including web, native iOS, backend integrations, the full booking flow, and an internal seatmap editor for venues.
+- **[PreviewLoop](https://previewloop.com)**: Building a visual feedback tool for websites, with on-page annotations, screenshots, a browser extension, and a team dashboard.
 - **Draculino**: Building a website and CMS, including the publishing workflow and deployment infrastructure.
 - **School meal ordering platform**: Building a website and app for parent orders, payments, and kitchen fulfilment.
 
