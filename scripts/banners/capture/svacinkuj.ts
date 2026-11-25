@@ -60,16 +60,20 @@ export async function captureSvacinkujAdmin(browser: Browser) {
     await pause(page, 1400);
     await smoothScroll(page, 300);
     await pause(page, 1600);
-    // Then the next delivery day's production, so the desktop keeps pace with the phone clip.
+    // Then the next delivery day, production first and its distribution list last, so the
+    // desktop keeps moving for as long as the phone clip runs.
     await smoothScroll(page, -700);
     await pause(page, 600);
     await click(page, page.getByRole("button", { name: "Další den" }));
     await page.waitForLoadState("networkidle");
-    await pause(page, 1600);
+    await pause(page, 1200);
     await click(page, page.locator("[role=tab], button").filter({ hasText: /^Výroba$/ }).first());
     await page.waitForLoadState("networkidle");
-    await pause(page, 1600);
-    await smoothScroll(page, 360);
+    await pause(page, 2000);
+    await click(page, page.locator("[role=tab], button").filter({ hasText: /^Výdejní seznam$/ }).first());
+    await page.waitForLoadState("networkidle");
+    await pause(page, 1400);
+    await smoothScroll(page, 300);
     await pause(page, 2400);
   });
   await context.close();

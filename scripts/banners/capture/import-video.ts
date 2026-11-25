@@ -54,12 +54,14 @@ mkdirSync(FRAMES_DIR, { recursive: true });
 const lock = join(FRAMES_DIR, `.import-${name}.lock`);
 try {
   closeSync(openSync(lock, "wx"));
-} catch {
+} catch (error) {
+  if ((error as NodeJS.ErrnoException).code !== "EEXIST") throw error;
   throw new Error(`Another import of ${name} is running (remove ${lock} if it is stale)`);
 }
-const scratch = mkdtempSync(join(FRAMES_DIR, `.import-${name}-`));
+let scratch: string | undefined;
 let frames: number;
 try {
+  scratch = mkdtempSync(join(FRAMES_DIR, `.import-${name}-`));
   execFileSync("ffmpeg", ["-loglevel", "error", "-y", ...inputArgs, "-filter_complex", filter, "-map", "[out]", "-q:v", "3", "-start_number", "0", join(scratch, "%04d.jpg")], {
     stdio: "inherit",
   });
@@ -71,7 +73,7 @@ try {
   rmSync(dir, { recursive: true, force: true });
   renameSync(scratch, dir);
 } finally {
-  rmSync(scratch, { recursive: true, force: true });
+  if (scratch) rmSync(scratch, { recursive: true, force: true });
   rmSync(lock, { force: true });
 }
 console.log(`${name}: ${frames} frames (${(frames / FPS).toFixed(1)}s)`);
